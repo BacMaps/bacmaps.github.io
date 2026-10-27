@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("mapquiz-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))}catch(e){}</script>
+<title>BacMaps | خرائط البكالوريا الجزائر - مراجعة التاريخ والجغرافيا (تسيير واقتصاد)</title>
+<meta name="description" content="BacMaps: خرائط بكالوريا الجزائر التفاعلية لمراجعة التاريخ والجغرافيا للسنة الثالثة ثانوي شعبة تسيير واقتصاد. تدرّب على الخرائط واختبر نفسك مجاناً.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BacMaps | خرائط البكالوريا الجزائر - مراجعة التاريخ والجغرافيا (تسيير واقتصاد)">
+<meta property="og:description" content="BacMaps: خرائط بكالوريا الجزائر التفاعلية لمراجعة التاريخ والجغرافيا للسنة الثالثة ثانوي شعبة تسيير واقتصاد. تدرّب على الخرائط واختبر نفسك مجاناً.">
+<meta property="og:locale" content="ar_DZ">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Permanent+Marker&family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#e4e9f0;--grid:rgba(27,58,138,.08);--ink:#1a2a4a;--mut:#5b6b85;--sea:#a9c3d6;--land:#dcd8c8;--line:#f3f0e4;--card:#f7f8fb;--bd:#b8c8dc;--pick:#2457c5;--ok:#1f8a54;--bad:#d2403a;--miss:#e0a010;--onpick:#fff;--bw:#e8832a;--be:#7fbf3f;--hc:#ffb347;--gc:#b6e35b;--hl:#ffe14d;--red:#d6404a;--head:#1b3a8a;--shd:#1a2a4a;--doodle:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27none%27%20stroke%3D%27%235f7ba3%27%20stroke-width%3D%271.4%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cg%20opacity%3D%27.30%27%3E%3Cg%20transform%3D%27translate%2828%2030%29%20rotate%28-8%29%27%3E%3Ccircle%20r%3D%2710%27%2F%3E%3Cellipse%20rx%3D%274%27%20ry%3D%2710%27%2F%3E%3Cpath%20d%3D%27M-10%200h20M-8%20-5h16M-8%205h16%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%2892%2024%29%20rotate%2840%29%27%3E%3Cpath%20d%3D%27M-9%209l2-7%2011-11%205%205-11%2011z%27%2F%3E%3Cpath%20d%3D%27M-7%202l5%205M2%20-6l5%205%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28150%2034%29%20rotate%2810%29%27%3E%3Cpath%20d%3D%27M0%2011c-7-8-9-12-9-16a9%209%200%200%201%2018%200c0%204-2%208-9%2016z%27%2F%3E%3Ccircle%20cy%3D%27-5%27%20r%3D%273%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%2862%2080%29%20rotate%2815%29%27%3E%3Ccircle%20r%3D%2710%27%2F%3E%3Cpath%20d%3D%27M0%20-8L3%200%200%208-3%200z%27%2F%3E%3Cpath%20d%3D%27M0%20-12v2M0%2010v2M-12%200h2M10%200h2%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28176%2092%29%20rotate%28-6%29%27%3E%3Cpath%20d%3D%27M-9%20-5L0%20-11%209%20-5zM-7%20-5v12M0%20-5v12M7%20-5v12M-10%207h20%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28120%2086%29%20rotate%28-28%29%27%3E%3Crect%20x%3D%27-12%27%20y%3D%27-4%27%20width%3D%2724%27%20height%3D%278%27%20rx%3D%271.5%27%2F%3E%3Cpath%20d%3D%27M-8%20-4v3M-4%20-4v4M0%20-4v3M4%20-4v4M8%20-4v3%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%2826%20130%29%20rotate%288%29%27%3E%3Cpath%20d%3D%27M-8%20-9h13a3%203%200%200%201%203%203v13a3%203%200%200%201-3%203h-13z%27%2F%3E%3Cpath%20d%3D%27M-4%20-4h8M-4%200h8M-4%204h5%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%2886%20142%29%20rotate%28-12%29%27%3E%3Cpath%20d%3D%27M-6%20-9h12M-6%209h12M-5%20-9c0%206%205%206%205%209s-5%203-5%209M5%20-9c0%206-5%206-5%209s5%203%205%209%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28146%20148%29%20rotate%2818%29%27%3E%3Cpath%20d%3D%27M0%20-9l2.6%206%206.4.6-4.9%204.2%201.5%206.3L0%204.8-5.6%208.1l1.5-6.3-4.9-4.2%206.4-.6z%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28164%20178%29%20rotate%280%29%27%3E%3Cpath%20d%3D%27M-14%206c8-14%2018%202%2026-10%27%20stroke-dasharray%3D%272%204%27%2F%3E%3Cpath%20d%3D%27M12%20-8l6%206M18%20-8l-6%206%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%2850%20178%29%20rotate%280%29%27%3E%3Cpath%20d%3D%27M-3%200h6M0%20-3v6%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28120%20122%29%20rotate%280%29%27%3E%3Cpath%20d%3D%27M-3%200h6M0%20-3v6%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%2810%2078%29%20rotate%280%29%27%3E%3Cpath%20d%3D%27M-3%200h6M0%20-3v6%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28178%2056%29%20rotate%280%29%27%3E%3Cpath%20d%3D%27M-3%200h6M0%20-3v6%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28104%2054%29%20rotate%280%29%27%3E%3Cpath%20d%3D%27M-3%200h6M0%20-3v6%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E")}
+:root[data-theme="dark"]{--bg:#1b2a26;--grid:rgba(255,255,255,.055);--ink:#eef0e6;--mut:#a9b8ae;--sea:#14242b;--land:#34453e;--line:#1b2a26;--card:#22332e;--bd:#3d534a;--pick:#7fb5ff;--ok:#58c98a;--bad:#ff7b6e;--miss:#f2c14e;--onpick:#10201b;--bw:#f09a45;--be:#8fcf55;--hc:#ffb347;--gc:#b6e35b;--hl:#ffe14d;--red:#ff7b83;--head:#0f1b18;--shd:rgba(0,0,0,.55);--doodle:url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27200%27%20height%3D%27200%27%20fill%3D%27none%27%20stroke%3D%27%23eef0e6%27%20stroke-width%3D%271.4%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cg%20opacity%3D%27.09%27%3E%3Cg%20transform%3D%27translate%2828%2030%29%20rotate%28-8%29%27%3E%3Ccircle%20r%3D%2710%27%2F%3E%3Cellipse%20rx%3D%274%27%20ry%3D%2710%27%2F%3E%3Cpath%20d%3D%27M-10%200h20M-8%20-5h16M-8%205h16%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%2892%2024%29%20rotate%2840%29%27%3E%3Cpath%20d%3D%27M-9%209l2-7%2011-11%205%205-11%2011z%27%2F%3E%3Cpath%20d%3D%27M-7%202l5%205M2%20-6l5%205%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28150%2034%29%20rotate%2810%29%27%3E%3Cpath%20d%3D%27M0%2011c-7-8-9-12-9-16a9%209%200%200%201%2018%200c0%204-2%208-9%2016z%27%2F%3E%3Ccircle%20cy%3D%27-5%27%20r%3D%273%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%2862%2080%29%20rotate%2815%29%27%3E%3Ccircle%20r%3D%2710%27%2F%3E%3Cpath%20d%3D%27M0%20-8L3%200%200%208-3%200z%27%2F%3E%3Cpath%20d%3D%27M0%20-12v2M0%2010v2M-12%200h2M10%200h2%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28176%2092%29%20rotate%28-6%29%27%3E%3Cpath%20d%3D%27M-9%20-5L0%20-11%209%20-5zM-7%20-5v12M0%20-5v12M7%20-5v12M-10%207h20%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28120%2086%29%20rotate%28-28%29%27%3E%3Crect%20x%3D%27-12%27%20y%3D%27-4%27%20width%3D%2724%27%20height%3D%278%27%20rx%3D%271.5%27%2F%3E%3Cpath%20d%3D%27M-8%20-4v3M-4%20-4v4M0%20-4v3M4%20-4v4M8%20-4v3%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%2826%20130%29%20rotate%288%29%27%3E%3Cpath%20d%3D%27M-8%20-9h13a3%203%200%200%201%203%203v13a3%203%200%200%201-3%203h-13z%27%2F%3E%3Cpath%20d%3D%27M-4%20-4h8M-4%200h8M-4%204h5%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%2886%20142%29%20rotate%28-12%29%27%3E%3Cpath%20d%3D%27M-6%20-9h12M-6%209h12M-5%20-9c0%206%205%206%205%209s-5%203-5%209M5%20-9c0%206-5%206-5%209s5%203%205%209%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28146%20148%29%20rotate%2818%29%27%3E%3Cpath%20d%3D%27M0%20-9l2.6%206%206.4.6-4.9%204.2%201.5%206.3L0%204.8-5.6%208.1l1.5-6.3-4.9-4.2%206.4-.6z%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28164%20178%29%20rotate%280%29%27%3E%3Cpath%20d%3D%27M-14%206c8-14%2018%202%2026-10%27%20stroke-dasharray%3D%272%204%27%2F%3E%3Cpath%20d%3D%27M12%20-8l6%206M18%20-8l-6%206%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%2850%20178%29%20rotate%280%29%27%3E%3Cpath%20d%3D%27M-3%200h6M0%20-3v6%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28120%20122%29%20rotate%280%29%27%3E%3Cpath%20d%3D%27M-3%200h6M0%20-3v6%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%2810%2078%29%20rotate%280%29%27%3E%3Cpath%20d%3D%27M-3%200h6M0%20-3v6%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28178%2056%29%20rotate%280%29%27%3E%3Cpath%20d%3D%27M-3%200h6M0%20-3v6%27%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%27translate%28104%2054%29%20rotate%280%29%27%3E%3Cpath%20d%3D%27M-3%200h6M0%20-3v6%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E")}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-tap-highlight-color:transparent}
+body{margin:0;color:var(--ink);font-family:Cairo,"Segoe UI",Tahoma,system-ui,sans-serif;line-height:1.7;background-color:var(--bg);background-image:var(--doodle);background-size:200px 200px}
+main{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 16px 28px}
+[hidden]{display:none!important}
+#nmbar{font-family:"Aref Ruqaa",Cairo,serif;font-size:1.7rem;font-weight:700;text-align:center;min-height:52px;margin:0 0 10px;padding:2px 12px;background:var(--card);border:2px solid var(--ink);border-radius:12px;box-shadow:3px 3px 0 var(--shd)}
+#sq{width:100%;box-sizing:border-box;min-height:48px;font:inherit;padding:0 14px;border:2px solid var(--ink);border-radius:10px;background:var(--card);color:var(--ink);-webkit-user-select:text;user-select:text}
+.sgb{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.sgb button{min-height:38px;padding:0 12px}
+.gm{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:10px 0}
+#gst{font-weight:700}
+#alist{margin:10px 0}
+.arow{display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%;min-height:52px;margin:0 0 8px;text-align:start;font-weight:700}
+.arow .v{color:var(--mut);font-size:.88rem;font-weight:700}
+.arow.done .v{color:var(--ok)}
+.arow[aria-pressed="true"]{background:var(--hl);color:#1a2a4a}
+.arow[aria-pressed="true"] .v{color:#1a2a4a}
+.datamaps-subunit.fl{fill:var(--bad)!important;stroke:var(--bad)!important;stroke-width:2.5px!important;animation:blk .55s 4}
+@keyframes blk{50%{fill-opacity:.25}}
+main{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+#res{-webkit-user-select:text;user-select:text}
+#map svg,#pad{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.mast{display:flex;align-items:center;gap:12px;margin:0 -16px 16px;padding:18px 16px;background:var(--head);color:#fff;border-bottom:4px solid var(--hl)}
+.mast-t{flex:1}
+.mast h1{font-family:"Permanent Marker",Cairo,sans-serif;font-size:2.4rem;font-weight:400;letter-spacing:.02em;text-align:right;margin:0;line-height:1.2}
+.mast h1 .mp{color:var(--hl)}
+.mast p{margin:2px 0 8px;opacity:.85;font-size:.9rem}
+.tile{flex:none;width:86px;height:86px;background:#fff;border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:3px 3px 0 rgba(0,0,0,.3)}
+.tile svg{width:70px;height:70px;display:block}
+button{font:inherit;min-height:44px;padding:0 14px;border-radius:10px;border:2px solid var(--ink);background:var(--card);color:var(--ink);cursor:pointer;box-shadow:2px 2px 0 var(--shd)}
+button:active{transform:translate(2px,2px);box-shadow:none}
+button:focus-visible{outline:3px solid var(--pick);outline-offset:2px}
+button.main{background:var(--pick);color:var(--onpick);font-weight:700}
+#theme{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 16px;background:#fff;color:#1b3a8a;border:2px solid #fff;border-radius:99px;font-size:.9rem;font-weight:800;box-shadow:0 2px 0 rgba(0,0,0,.25)}
+#theme svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ruler{margin:0 0 18px}
+.rl-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:0 0 6px;font-weight:800}
+.rl-h span{font-weight:400;color:var(--mut);font-size:.88rem}
+.rl{position:relative;height:28px;border:2px solid var(--ink);border-radius:6px;background:var(--card);overflow:hidden}
+.rl i{position:absolute;top:0;bottom:0;right:0;width:0;background:var(--hl);transition:width .5s}
+.rl::after{content:"";position:absolute;left:0;right:0;bottom:0;height:11px;background:repeating-linear-gradient(to left,var(--ink) 0 1.5px,transparent 1.5px 14px);opacity:.6}
+.pg{margin:0 0 20px;border:2px solid var(--ink);border-radius:12px;overflow:hidden;background:var(--card);box-shadow:4px 4px 0 var(--shd)}
+.pg-h{margin:0;padding:8px 14px;font-family:"Aref Ruqaa",Cairo,serif;font-size:1.5rem;font-weight:700;color:#1a2a4a;border-bottom:2px solid var(--ink)}
+.it{display:flex;align-items:center;gap:12px;width:100%;min-height:60px;padding:0 14px;text-align:start;border:0;border-bottom:1.5px dashed var(--bd);border-radius:0;box-shadow:none;background:transparent;font-size:1.02rem;font-weight:700}
+.it:last-child{border-bottom:0}
+.it:active{transform:none;background:var(--grid)}
+.bx{width:26px;height:26px;border:2px solid var(--ink);border-radius:5px;display:flex;align-items:center;justify-content:center;flex:none;background:var(--card)}
+.bx svg{width:22px;height:22px;fill:none;stroke:var(--red);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
+.nm{flex:1}
+.sc{font-weight:800;font-size:.95rem;color:var(--mut)}
+.sc.fl{color:var(--red)}
+.foot{text-align:center;color:var(--mut);font-size:.88rem;margin:14px 0 0}
+#rp{display:block;margin:0 auto;min-height:36px;font-size:.85rem;color:var(--mut);border-style:dashed;box-shadow:none}
+.top{display:flex;align-items:center;gap:10px;margin:14px 0 6px}
+.top h1{font-family:"Aref Ruqaa",Cairo,serif;font-size:1.6rem;font-weight:700;margin:0}
+.q{margin:8px 0 2px;font-size:1.02rem;font-weight:700}
+.hint{margin:0 0 10px;color:var(--mut);font-size:.88rem}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;align-items:center}
+.tab[aria-pressed="true"]{background:var(--ink);color:var(--bg);font-weight:700}
+.sp{flex:1}
+#map{position:relative;width:100%;background:var(--sea);box-shadow:0 0 0 2px var(--ink),4px 4px 0 2px var(--shd);border-radius:10px;overflow:hidden;touch-action:none}
+#map svg{display:block;touch-action:none;cursor:pointer}
+.datamaps-subunit{fill:var(--land)!important;stroke:var(--line)!important;stroke-width:.5px!important;vector-effect:non-scaling-stroke}
+.datamaps-subunit.sel{fill:var(--pick)!important}
+.datamaps-subunit.ok{fill:var(--ok)!important}
+.datamaps-subunit.bad{fill:var(--bad)!important}
+.datamaps-subunit.miss{fill:var(--miss)!important}
+.datamaps-subunit.bw{fill:var(--bw)!important}
+.datamaps-subunit.be{fill:var(--be)!important}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-inline-end:6px;vertical-align:-1px}
+#padwrap{margin:12px 0 8px}
+#pad{position:relative;width:70%;margin:0 auto;background:var(--sea);box-shadow:0 0 0 2px var(--ink),3px 3px 0 2px var(--shd);border-radius:10px;overflow:hidden;touch-action:none;cursor:crosshair}
+#st{margin:12px 0 8px;color:var(--mut)}
+.act{display:flex;gap:8px;margin:12px 0}
+#res{background:var(--card);border:2px solid var(--ink);border-radius:12px;padding:14px 16px;margin-top:8px;box-shadow:3px 3px 0 var(--shd)}
+#res h2{font-size:1.15rem;font-weight:800;margin:0 0 4px}
+#cheer{margin:0 0 8px;font-weight:700;color:var(--mut)}
+#res p{margin:6px 0}
+.k{display:inline-block;width:12px;height:12px;border-radius:3px;margin-inline-end:6px;vertical-align:-1px}
+#err{background:var(--card);border:2px solid var(--bad);border-radius:12px;padding:12px 16px}
+.pre{visibility:hidden;height:0;overflow:hidden}
+@media (prefers-reduced-motion:reduce){.rl i{transition:none}button:active{transform:none}}
+</style>
+</head>
+<body>
+<main>
+<div id="home">
+<header class="mast"><span class="tile"><svg viewBox="0 0 200 200" aria-hidden="true"><g stroke-linejoin="round" stroke-linecap="round">
+<path d="M39 116 64 107 100 119 136 107 161 116 176 175 136 158 100 175 64 158 25 175Z" fill="#fff" stroke="#1b3a8a" stroke-width="5"/>
+<path d="M64 109V157M136 109V157" stroke="#1b3a8a" stroke-opacity=".2" stroke-width="2"/>
+<circle cx="51" cy="133" r="6.2" fill="#d6404a"/>
+<path d="M62 132C74 140 82 151 98 154 112 156 122 148 133 143" fill="none" stroke="#d6404a" stroke-width="4.6" stroke-dasharray="5 7.5"/>
+<path d="M141 133l11 11M152 133l-11 11" stroke="#d6404a" stroke-width="5.4"/>
+<path d="M100 140C79 113 52 94 52 62a48 48 0 0 1 96 0c0 32-27 51-48 78Z" fill="#ffe14d" stroke="#1b3a8a" stroke-width="5.4"/>
+<circle cx="100" cy="62" r="33.5" fill="#fff" stroke="#1b3a8a" stroke-width="4.4"/>
+<path d="M100 40 105 57 122 62 105 67 100 84 95 67 78 62 95 57Z" fill="#ffe14d" transform="rotate(45 100 62)"/>
+<path d="M100 36 107 55 126 62 107 69 100 88 93 69 74 62 93 55Z" fill="#1b3a8a"/>
+<circle cx="100" cy="62" r="5.5" fill="#ffe14d"/>
+</g></svg></span><div class="mast-t"><h1 dir="ltr"><span>Bac</span><span class="mp">Maps</span></h1>
+<p>خرائط التاريخ والجغرافيا، السنة الثالثة ثانوي، تسيير واقتصاد</p>
+<button id="theme"><svg class="mn" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg><svg class="sn" viewBox="0 0 24 24" aria-hidden="true" hidden><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg><span id="thl">الوضع الليلي</span></button></div></header>
+<section class="ruler"><div class="rl-h"><b id="rtxt"></b><span id="pmsg"></span></div><div class="rl"><i id="pbar"></i></div></section>
+<div id="cards"></div>
+<button id="rp">مسح تقدّمي</button>
+<p class="foot">قريباً سيُضاف زر لإرسال ملاحظاتكم واقتراحاتكم. شكراً لتجربتكم.</p>
+</div>
+<div id="ex" class="pre">
+<div class="top"><button id="back">الرئيسية</button><h1 id="exh"></h1></div>
+<div class="bar" id="tabs"></div>
+<p class="q" id="q"></p>
+<p class="hint" id="hint1">اضغط على الدولة لاختيارها. كبّر الخريطة بإصبعين أو بالأزرار.</p>
+<div class="bar" id="pal" hidden></div>
+<div id="err" hidden>تعذّر تحميل الخريطة. تحقّق من اتصالك بالإنترنت ثم أعد فتح الصفحة.</div>
+<div class="bar">
+<button data-r="0,0,1">العالم</button>
+<button data-r="-100,48,2.8">أمريكا الشمالية</button>
+<button data-r="10,52,5.5">أوروبا</button>
+<button data-r="40,35,4">الشرق الأوسط</button>
+<button data-r="140,-25,3.5">أستراليا</button>
+<button data-r="125,25,4">شرق آسيا</button>
+<span class="sp"></span>
+<button id="zi" aria-label="تكبير">+</button>
+<button id="zo" aria-label="تصغير">−</button>
+</div>
+<div id="nmbar" hidden></div>
+<div id="map"></div>
+<div id="alist" hidden></div>
+<div id="padwrap" hidden><p class="hint">لوحة الرسم: حرّك إصبعك على اللوحة الصغيرة فيظهر رسمك على الخريطة الكبيرة. كبّر الخريطة الكبيرة أولاً بالأزرار لرسم أدق.</p><div id="pad"></div></div>
+<div id="exw" hidden>
+<div id="sbox"><input id="sq" type="search" placeholder="ابحث عن دولة بالاسم" autocomplete="off" autocapitalize="off" spellcheck="false">
+<p id="shint" class="hint" hidden></p><div id="sg" class="sgb"></div></div>
+<div id="gbox" hidden><div class="gm"><button id="gbtn" class="main">ابدأ اللعبة</button><button id="gend" hidden>إنهاء اللعبة</button><span id="gst"></span></div>
+<p class="hint" id="gnote">اللعبة مفتوحة بلا نهاية: العب كما تشاء، ثم اضغط «إنهاء اللعبة» لتعرف نتيجتك.</p></div>
+</div>
+<p id="st"></p>
+<div class="act" id="act">
+<button class="main" id="check">صحّح إجابتي</button>
+<button id="reset">ابدأ من جديد</button>
+</div>
+<section id="res" hidden>
+<h2 id="score"></h2><p id="cheer"></p>
+<div id="detail"></div>
+</section>
+</div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/d3@3.5.17/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson@1.6.9/topojson.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/datamaps@0.5.9/dist/datamaps.world.min.js"></script>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+if(typeof Datamap==='undefined'||typeof d3==='undefined'){$('ex').classList.remove('pre');$('home').hidden=true;$('err').hidden=false;$('map').hidden=true;return;}
+var QS=[
+{c:'g',n:'مجموعة السبع',t:'حدّد على الخريطة دول مجموعة السبع (G7).',m:'set',a:['USA','CAN','GBR','FRA','DEU','ITA','JPN']},
+{c:'g',n:'الشمال والجنوب',t:'ارسم الحدّ الفاصل بين الشمال والجنوب على لوحة الرسم.',m:'pad',pad:1,note:'يمرّ الخط على الحدود الجنوبية لروسيا، فتقع كازاخستان ومنغوليا والصين والقوقاز وتركيا جنوبه. ويفصل بين الكوريتين فقط، فاليابان وكوريا الجنوبية وأستراليا ونيوزيلندا شمالاً، والفلبين وتايوان جنوباً.'},
+{c:'h',n:'مجلس الأمن',t:'حدّد الدول الخمس دائمة العضوية في مجلس الأمن.',m:'set',a:['USA','RUS','CHN','GBR','FRA']},
+{c:'h',n:'مقرات الأحلاف',t:'اختر الحلف من القائمة أسفل الخريطة، ثم اضغط على الدولة التي يقع فيها مقره.',m:'seq',s:[['حلف شمال الأطلسي (بروكسل)','BEL'],['حلف وارسو (موسكو)','RUS'],['حلف جنوب شرق آسيا (بانكوك)','THA'],['حلف بغداد (بغداد)','IRQ'],['الحلف المركزي (أنقرة)','TUR']]},
+{c:'h',n:'أوروبا في الحرب الباردة',t:'لوّن كل دولة أوروبية بلون كتلتها: اختر اللون من الأزرار ثم اضغط على الدولة.',m:'bloc',z:[10,52,5.5],a:{FRA:'w',GBR:'w',BEL:'w',NLD:'w',DNK:'w',NOR:'w',ISL:'w',PRT:'w',ITA:'w',GRC:'w',DEU:'w',ESP:'w',SWE:'w',FIN:'w',IRL:'w',CHE:'w',AUT:'w',EDG:'e',POL:'e',CSK:'e',HUN:'e',ROU:'e',BGR:'e',ALB:'e',YUG:'e'}},
+{c:'h',n:'رسم الستار الحديدي',t:'ارسم الستار الحديدي على لوحة الرسم.',m:'pad',pad:1,eu:1,k:'cur',z:[10,50,5.5],note:'يمرّ الستار الحديدي بين ألمانيا الشرقية والغربية، ثم بين تشيكوسلوفاكيا وكل من ألمانيا الغربية والنمسا، ثم بين المجر ويوغسلافيا والنمسا، ثم بين يوغسلافيا وإيطاليا، ثم بين ألبانيا ويوغسلافيا وبلغاريا من جهة، واليونان من جهة أخرى.'},
+{c:'x',n:'استكشف الخريطة',t:'اضغط على أي دولة لتعرف اسمها، أو ابحث عنها بالاسم.',m:'explore',ex:1},
+{c:'x',n:'لعبة أين تقع؟',t:'ستظهر لك دولة، اضغط على مكانها في الخريطة.',m:'explore',ex:1,game:1}];
+var el=$('map'),W=el.clientWidth||340,H=Math.round(W*.62),s=W/(2*Math.PI),nat=s*2.51+8,top=(H-nat)/2+s*1.49+4;
+el.style.height=H+'px';
+var proj,zoom,svgEl,wrap,qi=0,finished=false,sel={},seq=[],paint={},brush='w',east=null,UN={},MGS=[],strokes=[],gx=null,NS='http://www.w3.org/2000/svg',padG=null,EX={},gm={t:null,n:0,ok:0},acur=0;
+function apply(){var k=zoom.scale(),t=zoom.translate();t[0]=Math.min(0,Math.max(W-W*k,t[0]));t[1]=Math.min(0,Math.max(H-H*k,t[1]));zoom.translate(t);var tr='translate('+t[0]+','+t[1]+')scale('+k+')';wrap.setAttribute('transform',tr);if(padG)padG.setAttribute('transform',tr);}
+function zoomTo(lon,lat,k){var p=proj([lon,lat]);zoom.scale(k).translate([W/2-p[0]*k,H/2-p[1]*k]);zoom.event(d3.select(svgEl));}
+function zoomBy(f){var k0=zoom.scale(),k=Math.max(1,Math.min(14,k0*f)),t=zoom.translate();zoom.scale(k).translate([W/2-(W/2-t[0])*k/k0,H/2-(H/2-t[1])*k/k0]);zoom.event(d3.select(svgEl));}
+var BC=['bw','be'],BLC={w:'غربية رأسمالية',e:'شرقية شيوعية'},GRP={CZE:'CSK',SVK:'CSK',SRB:'YUG',MNE:'YUG',BIH:'YUG',HRV:'YUG',SVN:'YUG',MKD:'YUG'};
+function units(k){return UN[k]||[];}
+function buildPal(){var p=$('pal');p.textContent='';['w','e'].forEach(function(c){var b=document.createElement('button'),sw=document.createElement('span');sw.className='sw';sw.style.background='var(--b'+c+')';b.appendChild(sw);b.appendChild(document.createTextNode(BLC[c]));b.className='tab';b.setAttribute('aria-pressed',c===brush?'true':'false');b.addEventListener('click',function(){brush=c;buildPal();});p.appendChild(b);});}
+function buildEast(){
+ var de=path('DEU');if(!de)return;
+ var pts=[[10.87,55.2],[10.87,53.96],[10.55,53.38],[11.55,53.05],[10.9,52.6],[11.0,52.25],[10.62,51.8],[10.2,51.5],[10.1,50.9],[9.95,50.55],[10.9,50.3],[11.8,50.4],[12.1,50.25],[12.1,49.9],[16,49.9],[16,55.2]];
+ var cp=document.createElementNS(NS,'clipPath');cp.setAttribute('id','eastClip');
+ var pg=document.createElementNS(NS,'path');pg.setAttribute('d','M'+pts.map(function(p){return proj(p).join(',');}).join('L')+'Z');cp.appendChild(pg);wrap.appendChild(cp);
+ east=document.createElementNS(NS,'path');east.setAttribute('d',de.getAttribute('d'));east.setAttribute('class','datamaps-subunit EDG');east.setAttribute('clip-path','url(#eastClip)');
+ d3.select(east).datum({id:'EDG',properties:{name:'East Germany'}});east.__k='EDG';east.style.display='none';
+ de.parentNode.appendChild(east);UN.EDG=[east];
+ var bl=document.createElementNS(NS,'path');bl.setAttribute('d','M'+pts.slice(1,13).map(function(p){return proj(p).join(',');}).join('L'));
+ bl.setAttribute('style','fill:none;stroke:var(--line);stroke-width:.8px;vector-effect:non-scaling-stroke;pointer-events:none;display:none');
+ de.parentNode.appendChild(bl);east.__bl=bl;
+}
+function buildMerged(){
+ var topo=Datamap.prototype.worldTopo,geoms=topo.objects.world.geometries,pg=d3.geo.path().projection(proj),par=east.parentNode;
+ var els=svgEl.querySelectorAll('.datamaps-subunit');
+ [{k:'PSE',ids:['ISR','PSE'],ex:1},{k:'CSK',ids:['CZE','SVK']},{k:'YUG',ids:['SVN','HRV','BIH','SRB','MNE','MKD'],kos:1},{k:'SUN',inert:1,ids:['RUS','UKR','BLR','MDA','EST','LVA','LTU','GEO','ARM','AZE','KAZ','UZB','TKM','TJK','KGZ']}].forEach(function(m){
+  var gs=geoms.filter(function(g){return m.ids.indexOf(g.id)>-1||(m.kos&&g.properties&&g.properties.name==='Kosovo');});
+  if(!gs.length)return;
+  var mem=[].filter.call(els,function(e){return e.__k===m.k||m.ids.indexOf(e.__k)>-1;});
+  var p=document.createElementNS(NS,'path');p.setAttribute('d',pg(topojson.merge(topo,gs)));p.setAttribute('class','datamaps-subunit '+m.k);
+  d3.select(p).datum({id:m.k,properties:{name:m.k}});p.__k=m.k;p.style.display='none';if(m.inert)p.style.pointerEvents='none';
+  par.appendChild(p);if(!m.inert)UN[m.k]=[p];if(m.ex){EX[m.k]=[p];p.__e=m.k;}MGS.push({p:p,mem:mem,ex:m.ex});
+ });
+ par.appendChild(east.__bl);
+}
+var LA=[[10.87,53.96],[10.55,53.38],[11.55,53.05],[10.9,52.6],[11.0,52.25],[10.62,51.8],[10.2,51.5],[10.1,50.9],[9.95,50.55],[10.9,50.3],[11.8,50.4],[12.1,50.25],[12.5,50.0],[12.9,49.7],[13.8,48.8],[14.9,48.95],[15.9,48.75],[16.95,48.6],[17.15,48.0],[16.9,47.7],[16.5,47.4],[16.1,47.0],[15.6,46.65],[14.6,46.45],[13.7,46.5],[13.6,45.65],[13.77,45.6]],
+LB=[[19.95,39.8],[20.7,40.1],[21.0,40.8],[22.4,41.1],[22.9,41.35],[23.4,41.4],[24.5,41.55],[25.3,41.25],[26.1,41.35],[26.3,41.7]],
+CPS=[[10.9,53.7,'ألمانيا الشرقية/الغربية (الشمال)'],[10.9,52.4,'ألمانيا الشرقية/الغربية (الوسط)'],[10.4,51.2,'ألمانيا الشرقية/الغربية (الجنوب)'],[12.1,50.2,'تشيكوسلوفاكيا/ألمانيا الغربية'],[13.8,48.9,'تشيكوسلوفاكيا/النمسا (غرب)'],[16.0,48.7,'تشيكوسلوفاكيا/النمسا (شرق)'],[16.5,47.4,'المجر/النمسا'],[14.3,46.45,'يوغسلافيا/النمسا'],[13.6,45.85,'يوغسلافيا/إيطاليا'],[20.7,40.2,'ألبانيا/اليونان'],[22.4,41.1,'يوغسلافيا/اليونان'],[25.3,41.3,'بلغاريا/اليونان']];
+function gxg(){if(!gx){gx=document.createElementNS(NS,'g');wrap.appendChild(gx);}return gx;}
+var PL=[[[-125,15],[-122,25],[-118.5,31],[-117.1,32.5],[-114.8,32.5],[-111,31.3],[-108.2,31.3],[-106.5,31.8],[-104.5,29.6],[-102.5,29.8],[-99.5,27.5],[-97.15,25.95],[-92,24.5],[-86,24.3],[-81,24.2],[-75,26.5],[-65,29],[-50,33],[-35,35.5],[-20,36],[-9,35.9],[-5.6,35.9],[0,36.5],[5,38],[10,37.9],[15,36.6],[20,35.9],[24,35.3],[26,37],[26.4,40.2],[29,41.1],[31,42.8],[35,43.4],[40,43.4],[42,43.2],[44,42.7],[46.5,41.8],[48.5,41.85],[49.3,44],[49.5,45.5],[49,46.6],[47,47.5],[46.8,48.5],[47,50],[48,51.5],[50,51.9],[52.5,51.7],[55.5,50.9],[58.5,51],[60.7,51.6],[61.5,52.3],[62.5,54],[65,54.5],[69,55.4],[73,54],[76.5,53.2],[79,51.5],[82.5,50.8],[85.5,49.3],[87.3,49.1],[90.5,50.3],[92,50.6],[94.5,50],[96.8,50.2],[98.5,52],[100.5,51.7],[102.2,51.3],[104,50.2],[106.5,50.3],[108.5,49.5],[111,49.5],[113.5,50],[116.7,49.8],[117.5,50.5],[119.2,51.7],[120,52.8],[121.5,53.3],[124,53.3],[126.5,52.2],[127.5,50.3],[129.5,49.3],[130.5,48],[132.5,47.7],[134.7,48.3],[134.5,47.5],[133.8,46.2],[133,45.3],[132,44.9],[131.2,44],[131,42.9],[130.7,42.3],[130.5,41],[129.8,40],[128.8,39],[128.4,38.6],[126.7,37.8],[125,37],[125.5,35.5],[125.8,33],[128.5,32],[131,30.5],[128,26.5],[125,24.2]],[[105,-35],[108,-20],[118,-11],[130,-9.5],[142,-9.5],[152,-10],[160,-20],[170,-30],[180,-38]]],
+PCP=[[35,43.2,'البحر الأسود (شمال تركيا)'],[43.5,42.85,'حدود روسيا مع جورجيا (القوقاز)'],[47,48.5,'حدود روسيا مع كازاخستان (الغرب)'],[60.5,51.5,'حدود روسيا مع كازاخستان (الوسط)'],[73,54,'حدود روسيا مع كازاخستان (الشرق)'],[100.5,51.6,'حدود روسيا مع منغوليا'],[127.5,50.3,'حدود روسيا مع الصين (نهر آمور)'],[133.8,46.3,'حدود روسيا مع الصين (نهر أوسوري)'],[-117.1,32.3,'الحدود الأمريكية المكسيكية (الغرب)'],[-108.2,31.2,'الحدود الأمريكية المكسيكية (الوسط)'],[-100.5,27.8,'الحدود الأمريكية المكسيكية (الشرق)'],[-81,24.2,'مضيق فلوريدا (بين أمريكا وكوبا)'],[-5.6,36,'مضيق جبل طارق'],[10,37.9,'وسط المتوسط (بين أوروبا وتونس)'],[26.4,40.2,'حدود تركيا وأوروبا (بحر إيجة)'],[127.5,38.3,'الحد بين الكوريتين'],[130,-9.5,'شمال أستراليا']];
+function buildPad(){
+ var pd=$('pad');pd.textContent='';pd.style.height=Math.round(H*.7)+'px';
+ var c=svgEl.cloneNode(true);c.removeAttribute('width');c.removeAttribute('height');c.setAttribute('viewBox','0 0 '+W+' '+H);c.style.cssText='display:block;width:100%;height:100%;pointer-events:none';
+ padG=c.firstElementChild;pd.appendChild(c);
+}
+function padXY(e){var r=$('pad').getBoundingClientRect();return [(e.clientX-r.left)/r.width*W,(e.clientY-r.top)/r.height*H];}
+function padAdd(xy){
+ var t=zoom.translate(),k=zoom.scale(),s=strokes[strokes.length-1];if(!s)return;
+ var p=[(xy[0]-t[0])/k,(xy[1]-t[1])/k];s.push(p);
+ var g=gxg(),pl=g.querySelector('.up'),cu=g.querySelector('.cur');
+ if(!pl){pl=document.createElementNS(NS,'path');pl.setAttribute('class','up');pl.setAttribute('style','fill:none;stroke:var(--pick);stroke-width:3px;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;pointer-events:none');g.appendChild(pl);}
+ if(!cu){cu=document.createElementNS(NS,'circle');cu.setAttribute('class','cur');cu.setAttribute('style','fill:none;stroke:var(--bad);stroke-width:2px;vector-effect:non-scaling-stroke;pointer-events:none');g.appendChild(cu);}
+ cu.setAttribute('cx',p[0]);cu.setAttribute('cy',p[1]);cu.setAttribute('r',7/k);
+ pl.setAttribute('d',strokes.map(function(a){return a.length?'M'+a.map(function(c){return c.join(',');}).join('L'):'';}).join(''));
+}
+function checkPad(q){
+ var cu=q.k==='cur',tol=cu?2.0:2.5,pts=[];
+ strokes.forEach(function(s){s.forEach(function(c,i){var a=proj.invert(c);pts.push(a);if(i){var b=proj.invert(s[i-1]);for(var j=1;j<6;j++)pts.push([b[0]+(a[0]-b[0])*j/6,b[1]+(a[1]-b[1])*j/6]);}});});
+ var g=gxg(),hit=0,miss=[],d=(cu?[LA,LB]:PL).map(function(L){return 'M'+L.map(function(c){return proj(c).join(',');}).join('L');}).join('');
+ ['stroke:#fff;stroke-width:9px','stroke:#111;stroke-width:4px'].forEach(function(st){var p=document.createElementNS(NS,'path');p.setAttribute('d',d);p.setAttribute('style','fill:none;'+st+';stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;pointer-events:none');g.appendChild(p);});
+ var u=g.querySelector('.up');if(u)g.appendChild(u);
+ var CP=cu?CPS:PCP;CP.forEach(function(c){
+  var ok=pts.some(function(p){return Math.hypot((p[0]-c[0])*Math.cos(c[1]*Math.PI/180),p[1]-c[1])<=tol;});
+  if(ok)hit++;else miss.push(c[2]);
+  var m=document.createElementNS(NS,'circle'),xy=proj(c);m.setAttribute('cx',xy[0]);m.setAttribute('cy',xy[1]);m.setAttribute('r',4/zoom.scale());
+  m.setAttribute('style','fill:var(--'+(ok?'ok':'miss')+');stroke:var(--ink);stroke-width:.8px;vector-effect:non-scaling-stroke;pointer-events:none');g.appendChild(m);
+ });
+ $('score').textContent=pts.length?'النتيجة: '+hit+' من '+CP.length+' مواضع':'لم ترسم خطاً';
+ line('ok','الخط الأسود:','هو الحد الفاصل الصحيح. النقاط الخضراء مواضع عبرها خطك (الأزرق).');
+ line('miss','مواضع لم يمرّ بها خطك (النقاط الصفراء):',miss.join('؛ ')||'لا شيء');
+ if(q.note)line('pick','ملاحظة:',q.note);
+ $('res').hidden=false;$('res').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+var AN={};
+var ANS='AFG:أفغانستان;ALB:ألبانيا;DZA:الجزائر;AGO:أنغولا;ARG:الأرجنتين;ARM:أرمينيا;AUS:أستراليا;AUT:النمسا;AZE:أذربيجان;BHS:جزر البهاما;BHR:البحرين;BGD:بنغلاديش;BLR:بيلاروسيا;BEL:بلجيكا;BLZ:بليز;BEN:بنين;BTN:بوتان;BOL:بوليفيا;BIH:البوسنة والهرسك;BWA:بوتسوانا;BRA:البرازيل;BRN:بروناي;BGR:بلغاريا;BFA:بوركينا فاسو;BDI:بوروندي;KHM:كمبوديا;CMR:الكاميرون;CAN:كندا;CAF:أفريقيا الوسطى|جمهورية أفريقيا الوسطى;TCD:تشاد;CHL:تشيلي;CHN:الصين;COL:كولومبيا;COM:جزر القمر;COG:الكونغو|الكونغو برازافيل;COD:الكونغو الديمقراطية|الكونغو كينشاسا;CRI:كوستاريكا;CIV:ساحل العاج|كوت ديفوار;HRV:كرواتيا;CUB:كوبا;CYP:قبرص;CZE:التشيك|تشيكيا;DNK:الدانمارك|الدنمارك;DJI:جيبوتي;DOM:جمهورية الدومينيكان|الدومينيكان;ECU:الإكوادور;EGY:مصر;SLV:السلفادور;GNQ:غينيا الاستوائية;ERI:إريتريا;EST:إستونيا;ETH:إثيوبيا;FLK:جزر فوكلاند;FJI:فيجي;FIN:فنلندا;FRA:فرنسا;GUF:غيانا الفرنسية;GAB:الغابون;GMB:غامبيا;GEO:جورجيا;DEU:ألمانيا;GHA:غانا;GRC:اليونان;GRL:غرينلاند;GTM:غواتيمالا;GIN:غينيا;GNB:غينيا بيساو;GUY:غيانا;HTI:هايتي;HND:هندوراس;HUN:المجر;ISL:أيسلندا|آيسلندا;IND:الهند;IDN:إندونيسيا;IRN:إيران;IRQ:العراق;IRL:إيرلندا|أيرلندا;ITA:إيطاليا;JAM:جامايكا;JPN:اليابان;JOR:الأردن;KAZ:كازاخستان;KEN:كينيا;PRK:كوريا الشمالية;KOR:كوريا الجنوبية;XKX:كوسوفو;KWT:الكويت;KGZ:قيرغيزستان;LAO:لاوس;LVA:لاتفيا;LBN:لبنان;LSO:ليسوتو;LBR:ليبيريا;LBY:ليبيا;LTU:ليتوانيا;LUX:لوكسمبورغ;MKD:مقدونيا الشمالية|مقدونيا;MDG:مدغشقر;MWI:مالاوي;MYS:ماليزيا;MLI:مالي;MRT:موريتانيا;MEX:المكسيك;MDA:مولدوفا;MNG:منغوليا;MNE:الجبل الأسود;MAR:المغرب;MOZ:موزمبيق;MMR:ميانمار|بورما;NAM:ناميبيا;NPL:نيبال;NLD:هولندا;NCL:كاليدونيا الجديدة;NZL:نيوزيلندا;NIC:نيكاراغوا;NER:النيجر;NGA:نيجيريا;NOR:النرويج;OMN:عمان;PAK:باكستان;PAN:بنما;PNG:بابوا غينيا الجديدة;PRY:باراغواي;PER:بيرو;PHL:الفلبين;POL:بولندا;PRT:البرتغال;PRI:بورتوريكو;QAT:قطر;ROU:رومانيا;RUS:روسيا;RWA:رواندا;SAU:السعودية|المملكة العربية السعودية;SEN:السنغال;SRB:صربيا;SLE:سيراليون;SVK:سلوفاكيا;SVN:سلوفينيا;SLB:جزر سليمان;SOM:الصومال;ZAF:جنوب أفريقيا;SSD:جنوب السودان;ESP:إسبانيا;LKA:سريلانكا;SDN:السودان;SUR:سورينام;SWZ:إسواتيني|سوازيلاند;SWE:السويد;CHE:سويسرا;SYR:سوريا;TWN:تايوان;TJK:طاجيكستان;TZA:تنزانيا;THA:تايلاند;TLS:تيمور الشرقية;TGO:توغو;TTO:ترينيداد وتوباغو;TUN:تونس;TUR:تركيا;TKM:تركمانستان;UGA:أوغندا;UKR:أوكرانيا;ARE:الإمارات|الإمارات العربية المتحدة;GBR:بريطانيا|المملكة المتحدة|إنجلترا;USA:الولايات المتحدة|أمريكا|الولايات المتحدة الأمريكية;URY:الأوروغواي|أوروغواي;UZB:أوزبكستان;VUT:فانواتو;VEN:فنزويلا;VNM:فيتنام;ESH:الصحراء الغربية;YEM:اليمن;ZMB:زامبيا;ZWE:زيمبابوي;PSE:فلسطين;ISR:فلسطين;EDG:ألمانيا الشرقية;CSK:تشيكوسلوفاكيا;YUG:يوغسلافيا;ATA:القارة القطبية الجنوبية|أنتاركتيكا;ATF:الأراضي الجنوبية والقطبية الفرنسية';
+ANS.split(';').forEach(function(x){var i=x.indexOf(':');AN[x.slice(0,i)]=x.slice(i+1).split('|');});
+var gmc=null,NMK={'Kosovo':'XKX','Northern Cyprus':'CYP','Somaliland':'SOM'};
+function nrm(t){return t.replace(/[\u064B-\u065F\u0640]/g,'').replace(/[أإآٱ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه').replace(/ؤ/g,'و').replace(/ئ/g,'ي').replace(/\s+/g,' ').trim().toLowerCase();}
+function lev(a,b){var m=[],i,j;for(i=0;i<=a.length;i++)m[i]=[i];for(j=1;j<=b.length;j++)m[0][j]=j;for(i=1;i<=a.length;i++)for(j=1;j<=b.length;j++)m[i][j]=Math.min(m[i-1][j]+1,m[i][j-1]+1,m[i-1][j-1]+(a[i-1]===b[j-1]?0:1));return m[a.length][b.length];}
+function exClear(){svgEl.querySelectorAll('.sel,.fl,.ok,.bad,.miss').forEach(function(p){p.classList.remove('sel','fl','ok','bad','miss');});}
+function exDef(){return QS[qi].game?'اضغط «ابدأ اللعبة»':'اضغط على أي دولة لتعرف اسمها';}
+function exReset(){exClear();$('nmbar').textContent=exDef();}
+function exFocus(k){
+ var u=EX[k];if(!u||!u.length)return;
+ var b=u[0].getBBox(),cx=b.x+b.width/2,cy=b.y+b.height/2,kk=Math.max(1.5,Math.min(14,.45*Math.min(W/Math.max(b.width,1),H/Math.max(b.height,1))));
+ zoom.scale(kk).translate([W/2-cx*kk,H/2-cy*kk]);zoom.event(d3.select(svgEl));
+}
+function exTap(t,g){
+ var k=t.__e||g.id,u=EX[k]||[t];
+ if(gm.t){
+  exClear();var right=k===gm.t;gm.n++;if(right)gm.ok++;
+  u.forEach(function(e){e.classList.add(right?'ok':'bad');});
+  $('nmbar').textContent=nm(k,g);
+  $('gst').textContent=(right?'صحيح! ':'هذه '+nm(k,g)+'. الصحيح هو '+nm(gm.t)+' وقد انتقلت إليه (بالأصفر). ')+'نتيجتك '+gm.ok+' من '+gm.n;
+  if(!right){(EX[gm.t]||[]).forEach(function(e){e.classList.add('miss');});exFocus(gm.t);}
+  $('gbtn').textContent='السؤال التالي';gm.t=null;return;
+ }
+ if(QS[qi].game)return;
+ if(u[0].classList.contains('sel')||u[0].classList.contains('fl')){exReset();return;}
+ exClear();u.forEach(function(e){e.classList.add('sel');});$('nmbar').textContent=nm(k,g);
+}
+function exGo(k){
+ var u=EX[k];if(!u||!u.length)return;exClear();exFocus(k);
+ u.forEach(function(e){e.classList.add('fl');});$('nmbar').textContent=nm(k);
+}
+function arRender(){
+ var q=QS[qi],box=$('alist');if(q.m!=='seq')return;box.textContent='';
+ q.s.forEach(function(st,i){
+  var b=document.createElement('button'),a=document.createElement('span'),v=document.createElement('span');
+  b.className='arow'+(seq[i]?' done':'');b.setAttribute('aria-pressed',i===acur?'true':'false');
+  a.textContent=st[0];v.className='v';v.textContent=seq[i]?'← '+seq[i].name:'اضغط ثم اختر الدولة';
+  b.appendChild(a);b.appendChild(v);b.addEventListener('click',function(){if(finished)return;acur=i;arRender();});box.appendChild(b);
+ });
+ $('st').textContent='اضغط على الحلف الذي تريده، ثم على الدولة التي يقع فيها مقره. لتغيير إجابتك اضغط على الحلف مرة أخرى واختر دولة أخرى.';
+}
+function seqSet(t,g){
+ var q=QS[qi];seq[acur]={id:g.id,el:t,name:nm(g.id,g)};
+ svgEl.querySelectorAll('.sel').forEach(function(p){p.classList.remove('sel');});
+ seq.forEach(function(a){if(a)a.el.classList.add('sel');});
+ for(var i=1;i<=q.s.length;i++){var j=(acur+i)%q.s.length;if(!seq[j]){acur=j;break;}}
+ arRender();
+}
+function srch(){
+ var v=nrm($('sq').value),box=$('sg'),h=$('shint');box.textContent='';h.hidden=true;if(!v)return;
+ var ks=Object.keys(AN).filter(function(k){return EX[k]&&EX[k].length;}),hit=[];
+ ks.forEach(function(k){var sc=0;AN[k].forEach(function(n){var i=nrm(n).indexOf(v);if(i===0)sc=Math.max(sc,3);else if(i>0)sc=Math.max(sc,2);});if(sc)hit.push([k,sc]);});
+ hit.sort(function(a,b){return b[1]-a[1];});
+ if(!hit.length){
+  var tol=v.length>=5?2:1;
+  ks.forEach(function(k){var d=99;AN[k].forEach(function(n){n=nrm(n);d=Math.min(d,lev(v,n),lev(v,n.slice(0,v.length+1)));});if(d<=tol)hit.push([k,-d]);});
+  hit.sort(function(a,b){return b[1]-a[1];});
+  h.textContent=hit.length?'لا يوجد اسم مطابق تماماً. هل تقصد:':'لم أجد دولة بهذا الاسم. جرّب كتابة جزء منه.';h.hidden=false;
+ }
+ hit.slice(0,6).forEach(function(x){var b=document.createElement('button');b.textContent=AN[x[0]][0];b.addEventListener('click',function(){$('sq').value=AN[x[0]][0];$('sq').blur();box.textContent='';h.hidden=true;exGo(x[0]);});box.appendChild(b);});
+}
+function gmList(){
+ if(gmc)return gmc;gmc=[];
+ Object.keys(AN).forEach(function(k){var u=EX[k];if(!u||!u.length||k==='ATA'||k==='ATF')return;try{var b=u[0].getBBox();if(b.width*b.height>8)gmc.push(k);}catch(e){}});
+ return gmc;
+}
+function gmNext(){
+ var c=gmList();if(!c.length)return;exClear();
+ var k=c[Math.floor(Math.random()*c.length)];gm.t=k;
+ $('nmbar').textContent='؟';$('gst').textContent='أين تقع: '+AN[k][0]+'؟ اضغط عليها على الخريطة.';$('gbtn').textContent='تخطَّ';$('gend').hidden=false;
+ zoomTo(0,0,1);
+}
+function gmEnd(){
+ var r=gm.n?'انتهت اللعبة. نتيجتك '+gm.ok+' من '+gm.n+'.':'';
+ gm={t:null,n:0,ok:0};exReset();$('gst').textContent=r;$('gbtn').textContent='ابدأ اللعبة';$('gend').hidden=true;
+}
+function checkBloc(q){
+ var n=0,tot=Object.keys(q.a).length,wrong=[],miss=[];
+ Object.keys(q.a).forEach(function(k){var b=paint[k];
+  if(b===q.a[k])n++;
+  else{units(k).forEach(function(e){e.classList.remove('bw','be');e.classList.add(b?'bad':'miss');});
+   (b?wrong:miss).push(nm(k)+(b?' (اخترت: '+BLC[b]+'، والصحيح: ':' (الصحيح: ')+BLC[q.a[k]]+')');}});
+ Object.keys(paint).forEach(function(k){if(!q.a[k]){units(k).forEach(function(e){e.classList.remove('bw','be');e.classList.add('bad');});wrong.push(nm(k)+' (غير مطلوبة)');}});
+ $('score').textContent='النتيجة: '+n+' من '+tot;
+ line('ok','الصحيح:',n+' دولة (بقيت بلون كتلتها)');
+ line('bad','أخطاؤك:',wrong.join('؛ ')||'لا شيء');
+ line('miss','دول نسيتها:',miss.join('؛ ')||'لا شيء');
+ $('res').hidden=false;$('res').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function nm(id,g){if(QS[qi].m==='bloc'&&id==='DEU')return 'ألمانيا الغربية';if(id==='RUS'&&QS[qi].c==='h')return 'الاتحاد السوفييتي';var pn=g&&g.properties&&g.properties.name,a=AN[id]||AN[NMK[pn]];return a?a[0]:pn||id;}
+function path(id){return svgEl.querySelector('.datamaps-subunit.'+id);}
+function status(){var q=QS[qi];if(q.m==='seq'){arRender();return;}if(q.m==='explore'){$('st').textContent='';return;}if(q.m==='pad'){$('st').textContent='ارسم على اللوحة ثم اضغط «صحّح إجابتي».';return;}if(q.m==='bloc'){$('st').textContent='عدد الدول الملوّنة: '+Object.keys(paint).length;return;}
+ $('st').textContent='عدد الدول المحدّدة: '+Object.keys(sel).length;}
+function tap(t){
+ if(finished||!t.classList||!t.classList.contains('datamaps-subunit'))return;
+ var g=d3.select(t).datum();if(!g||!g.id)return;var q=QS[qi];
+ if(q.m==='explore'){exTap(t,g);return;}
+ if(q.m==='pad')return;
+ if(q.m==='bloc'){var k=t.__k||g.id;units(k).forEach(function(e){BC.forEach(function(c){e.classList.remove(c);});if(paint[k]!==brush)e.classList.add('b'+brush);});if(paint[k]===brush)delete paint[k];else paint[k]=brush;status();return;}
+ if(q.m==='set'){
+  if(sel[g.id]){delete sel[g.id];t.classList.remove('sel');}
+  else{sel[g.id]={el:t,name:nm(g.id,g)};t.classList.add('sel');}
+ }else if(q.m==='seq'){seqSet(t,g);}
+ status();
+}
+function line(cls,label,text){var p=document.createElement('p'),k=document.createElement('span'),b=document.createElement('b');
+ k.className='k';k.style.background='var(--'+cls+')';b.textContent=label+' ';p.appendChild(k);p.appendChild(b);p.appendChild(document.createTextNode(text));$('detail').appendChild(p);}
+function check(){
+ if(finished)return;finished=true;var q=QS[qi];$('detail').textContent='';if(q.m==='bloc'){checkBloc(q);return;}if(q.m==='pad'){checkPad(q);return;}
+ if(q.m==='set'){
+  var ok=[],bad=[],miss=[];
+  Object.keys(sel).forEach(function(id){var v=sel[id];v.el.classList.remove('sel');
+   if(q.a.indexOf(id)>-1){v.el.classList.add('ok');ok.push(v.name);}else{v.el.classList.add('bad');bad.push(v.name);}});
+  q.a.forEach(function(id){if(!sel[id]){var p=path(id);if(p)p.classList.add('miss');miss.push(nm(id));}});
+  $('score').textContent='النتيجة: '+ok.length+' من '+q.a.length+(bad.length?' (مع '+bad.length+' خطأ)':'');
+  line('ok','إجاباتك الصحيحة:',ok.join('، ')||'لا شيء');
+  line('bad','أخطاؤك:',bad.join('، ')||'لا شيء');
+  line('miss','دول نسيتها:',miss.join('، ')||'لا شيء');
+  line('pick','الإجابة النموذجية:',q.a.map(function(id){return nm(id);}).join('، '));
+ }else{
+  var n=0;
+  q.s.forEach(function(st,i){var a=seq[i],right=a&&a.id===st[1];
+   if(a){a.el.classList.remove('sel');a.el.classList.add(right?'ok':'bad');}
+   if(right)n++;else{var p=path(st[1]);if(p)p.classList.add('miss');}
+   line(right?'ok':'bad',st[0]+':',right?nm(st[1])+' (صحيح)':(a?'اخترت '+a.name+'، والصحيح: ':'لم تجب، والصحيح: ')+nm(st[1]));});
+  $('score').textContent='النتيجة: '+n+' من '+q.s.length;
+ }
+ $('res').hidden=false;$('res').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function clear(){finished=false;sel={};seq=[];acur=0;paint={};strokes=[];if(gx)gx.textContent='';$('res').hidden=true;
+ svgEl.querySelectorAll('.sel,.ok,.bad,.miss,.bw,.be').forEach(function(p){p.classList.remove('sel','ok','bad','miss','bw','be');});}
+function load(i){qi=i;clear();$('exh').textContent=QS[i].n;$('q').textContent=QS[i].t;
+ document.querySelectorAll('.tab').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.i===i?'true':'false');});
+ var q=QS[i];$('pal').hidden=q.m!=='bloc';if(east){var sh=(q.m==='bloc'||q.eu)?'':'none';east.style.display=sh;east.__bl.style.display=sh;MGS.forEach(function(m){var on=m.ex?!!q.ex:sh==='';m.p.style.display=on?'':'none';m.mem.forEach(function(e){e.style.display=on?'none':'';});});}if(q.m==='bloc')buildPal();
+ $('padwrap').hidden=!q.pad;if(q.pad)buildPad();
+ $('alist').hidden=q.m!=='seq';var hh=$('hint1');hh.textContent=q.ex||q.m==='seq'?'':(q.pad?'كبّر الخريطة بالأزرار أولاً، ثم ارسم على لوحة الرسم الصغيرة تحت الخريطة.':'اضغط على الدولة لاختيارها. كبّر الخريطة بإصبعين أو بالأزرار.');hh.hidden=!hh.textContent;
+ $('nmbar').hidden=!q.ex;$('exw').hidden=!q.ex;$('act').hidden=!!q.ex;
+ if(q.ex){gm={t:null,n:0,ok:0};$('nmbar').textContent=exDef();$('gst').textContent='';$('gbtn').textContent='ابدأ اللعبة';$('sq').value='';$('sg').textContent='';$('shint').hidden=true;$('gend').hidden=true;$('sbox').hidden=!!q.game;$('gbox').hidden=!q.game;}
+ status();if(q.z)zoomTo(q.z[0],q.z[1],q.z[2]);else zoomTo(0,0,1);}
+function showSec(c){
+ $('tabs').textContent='';var first=-1;
+ QS.forEach(function(q,i){if(q.c!==c)return;if(first<0)first=i;var b=document.createElement('button');b.className='tab';b.textContent=q.n;b.dataset.i=i;b.addEventListener('click',function(){load(i);});$('tabs').appendChild(b);});
+ load(first);
+}
+function init(m){
+ svgEl=m.svg.node();wrap=document.createElementNS(NS,'g');
+ while(svgEl.firstChild)wrap.appendChild(svgEl.firstChild);svgEl.appendChild(wrap);
+ zoom=d3.behavior.zoom().scaleExtent([1,14]).on('zoom',apply);
+ d3.select(svgEl).call(zoom).on('dblclick.zoom',null);
+ var els=svgEl.querySelectorAll('.datamaps-subunit');
+ for(var i=0;i<els.length;i++){var d=d3.select(els[i]).datum()||{},k=GRP[d.id]||((d.properties&&d.properties.name==='Kosovo')?'YUG':d.id);els[i].__k=k;(UN[k]=UN[k]||[]).push(els[i]);var eid=NMK[d.properties&&d.properties.name]||d.id,ek=({ISR:'PSE',SOL:'SOM'})[eid]||eid;els[i].__e=ek;(EX[ek]=EX[ek]||[]).push(els[i]);}
+ buildEast();try{buildMerged();}catch(e){}
+ var down=null,ptrs=0,multi=false;
+ svgEl.addEventListener('pointerdown',function(e){ptrs++;if(ptrs>1)multi=true;down={x:e.clientX,y:e.clientY};});
+ svgEl.addEventListener('pointerup',function(e){
+  ptrs=Math.max(0,ptrs-1);
+  if(down&&!multi&&Math.hypot(e.clientX-down.x,e.clientY-down.y)<8)tap(e.target);
+  if(ptrs===0){multi=false;down=null;}
+ });
+ svgEl.addEventListener('pointercancel',function(){ptrs=0;multi=false;down=null;});
+ var pd=$('pad'),pdown=false;
+ pd.addEventListener('pointerdown',function(e){if(finished||QS[qi].m!=='pad')return;pdown=true;try{pd.setPointerCapture(e.pointerId);}catch(x){}strokes.push([]);padAdd(padXY(e));e.preventDefault();});
+ pd.addEventListener('pointermove',function(e){if(pdown)padAdd(padXY(e));});
+ var pend=function(){pdown=false;var c=gx&&gx.querySelector('.cur');if(c)c.parentNode.removeChild(c);};
+ pd.addEventListener('pointerup',pend);pd.addEventListener('pointercancel',pend);
+ pd.addEventListener('contextmenu',function(e){e.preventDefault();});svgEl.addEventListener('contextmenu',function(e){e.preventDefault();});
+ document.querySelectorAll('[data-r]').forEach(function(b){b.addEventListener('click',function(){var a=b.getAttribute('data-r').split(',').map(Number);zoomTo(a[0],a[1],a[2]);});});
+ $('zi').addEventListener('click',function(){zoomBy(1.6);});
+ $('zo').addEventListener('click',function(){zoomBy(1/1.6);});
+ $('check').addEventListener('click',check);
+ $('sq').addEventListener('input',srch);$('sq').addEventListener('keydown',function(e){if(e.key==='Enter'){var b=$('sg').querySelector('button');if(b)b.click();e.preventDefault();}});
+ $('gbtn').addEventListener('click',gmNext);$('gend').addEventListener('click',gmEnd);
+ $('reset').addEventListener('click',function(){load(qi);});
+ showSec('h');goHome();
+}
+var PK='mapquiz-progress-v1',prog={},rpc=false;
+try{prog=JSON.parse(localStorage.getItem(PK)||'{}')||{};}catch(e){prog={};}
+function saveProg(){try{localStorage.setItem(PK,JSON.stringify(prog));}catch(e){}}
+function goHome(){$('ex').classList.remove('pre');$('ex').hidden=true;$('home').hidden=false;renderHome();window.scrollTo(0,0);}
+function openEx(i){$('home').hidden=true;$('ex').hidden=false;showSec(QS[i].c);load(i);window.scrollTo(0,0);}
+function renderHome(){
+ var cards=$('cards'),done=0,NS2=QS.filter(function(q){return q.m!=='explore';}).length;cards.textContent='';
+ QS.forEach(function(q){var o=prog[q.n];if(o&&o.b>=o.t)done++;});
+ [['h','التاريخ','var(--hc)'],['g','الجغرافيا','var(--gc)'],['x','استكشف','var(--hl)']].forEach(function(sc){
+  var pg=document.createElement('section'),h=document.createElement('h2'),bd=document.createElement('div');
+  pg.className='pg';h.className='pg-h';h.style.background=sc[2];h.textContent=sc[1];
+  QS.forEach(function(q,i){
+   if(q.c!==sc[0])return;
+   var o=prog[q.n],full=!!o&&o.b>=o.t,b=document.createElement('button'),bx=document.createElement('span'),nm1=document.createElement('span'),sc2=document.createElement('span');
+   b.className='it';bx.className='bx';if(q.m==='explore')bx.style.display='none';
+   if(full)bx.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13l6 6L21 5"/></svg>';
+   nm1.className='nm';nm1.textContent=q.n;sc2.className='sc'+(full?' fl':'');sc2.textContent=o?o.b+'/'+o.t:'';
+   b.appendChild(bx);b.appendChild(nm1);b.appendChild(sc2);b.addEventListener('click',function(){openEx(i);});bd.appendChild(b);
+  });
+  pg.appendChild(h);pg.appendChild(bd);cards.appendChild(pg);
+ });
+ var pct=Math.round(done/NS2*100);
+ $('pbar').style.width=pct+'%';$('rtxt').textContent=done+' من '+NS2+' خرائط مكتملة';
+ $('pmsg').textContent=pct===0?'اختر خريطة وابدأ.':pct<50?'بداية موفقة، واصل.':pct<100?'اقتربت، بقي القليل.':'أتممت كل الخرائط، أحسنت.';
+}
+var th=document.documentElement.getAttribute('data-theme')||'light';
+function applyTheme(t){document.documentElement.setAttribute('data-theme',t);var d=t==='dark';$('thl').textContent=d?'الوضع النهاري':'الوضع الليلي';document.querySelector('#theme .mn').hidden=d;document.querySelector('#theme .sn').hidden=!d;}
+applyTheme(th);
+$('theme').addEventListener('click',function(){th=th==='dark'?'light':'dark';applyTheme(th);try{localStorage.setItem('mapquiz-theme',th);}catch(e){}});
+function cheer(b,t){var r=b/t;$('cheer').textContent=r>=1?'ممتاز، إجابة كاملة. أحسنت.':r>=.7?'جيد جداً، أنت قريب من الكمال. راجع الخطأ وأعد المحاولة.':r>=.4?'بداية جيدة. راجع الأخطاء وأعد المحاولة، فالتكرار يثبّت الحفظ.':'لا بأس، المراجعة تصنع الفرق. اقرأ الإجابة ثم جرّب مرة أخرى.';}
+new MutationObserver(function(){
+ var m=/(\d+)\D+(\d+)/.exec($('score').textContent);if(!m)return;
+ var b=+m[1],t=+m[2],k=QS[qi].n,o=prog[k];
+ prog[k]=(!o||o.t!==t)?{b:b,t:t}:{b:Math.max(o.b,b),t:t};saveProg();cheer(b,t);
+}).observe($('score'),{childList:true,characterData:true,subtree:true});
+$('back').addEventListener('click',goHome);
+$('rp').addEventListener('click',function(){if(!rpc){rpc=true;$('rp').textContent='اضغط مرة أخرى للتأكيد';return;}prog={};saveProg();rpc=false;$('rp').textContent='مسح تقدّمي';renderHome();});
+new Datamap({element:el,scope:'world',
+ setProjection:function(){proj=d3.geo.equirectangular().scale(s).translate([W/2,top]);return{path:d3.geo.path().projection(proj),projection:proj};},
+ geographyConfig:{highlightOnHover:false,popupOnHover:false},
+ done:init});
+})();
+</script>
+</body>
+</html>
