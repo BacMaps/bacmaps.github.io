@@ -73,6 +73,13 @@ button.main{background:var(--pick);color:var(--onpick);font-weight:700}
 .sc{font-weight:800;font-size:.95rem;color:var(--mut)}
 .sc.fl{color:var(--red)}
 .foot{text-align:center;color:var(--mut);font-size:.88rem;margin:14px 0 0}
+.fbk{display:grid;gap:8px;max-width:420px;margin:14px auto 0}
+.fbk label{color:var(--mut);font-size:.9rem}
+.fbk textarea{width:100%;box-sizing:border-box;min-height:84px;padding:10px;border-radius:10px;border:2px solid var(--ink);background:var(--card);color:var(--ink);font:inherit;font-size:16px;resize:vertical}
+.fbk textarea:focus-visible{outline:3px solid var(--pick);outline-offset:2px}
+.fbk button:disabled{opacity:.6;cursor:default}
+.fbk .foot{margin:0;min-height:1.3em}
+.fbk .fl{color:var(--mut);font-size:.85rem;text-align:center}
 #rp{display:block;margin:0 auto;min-height:36px;font-size:.85rem;color:var(--mut);border-style:dashed;box-shadow:none}
 .top{display:flex;align-items:center;gap:10px;margin:14px 0 6px}
 .top h1{font-family:"Aref Ruqaa",Cairo,serif;font-size:1.6rem;font-weight:700;margin:0}
@@ -125,7 +132,14 @@ button.main{background:var(--pick);color:var(--onpick);font-weight:700}
 <section class="ruler"><div class="rl-h"><b id="rtxt"></b><span id="pmsg"></span></div><div class="rl"><i id="pbar"></i></div></section>
 <div id="cards"></div>
 <button id="rp">مسح تقدّمي</button>
-<p class="foot">قريباً سيُضاف زر لإرسال ملاحظاتكم واقتراحاتكم. شكراً لتجربتكم.</p>
+<div class="fbk">
+<label for="fbt">ملاحظاتك أو اقتراحك</label>
+<textarea id="fbt" maxlength="1000" rows="3" placeholder="اكتب ملاحظتك هنا..."></textarea>
+<button id="fbs" class="main">إرسال</button>
+<p id="fbm" class="foot" role="status"></p>
+<a class="fl" href="https://forms.gle/UZk4A8AUnhFGJTY2A" target="_blank" rel="noopener">أو افتح نموذج الملاحظات</a>
+</div>
+<p class="foot">شكراً لتجربتكم.</p>
 </div>
 <div id="ex" class="pre">
 <div class="top"><button id="back">الرئيسية</button><h1 id="exh"></h1></div>
@@ -472,6 +486,21 @@ new Datamap({element:el,scope:'world',
  setProjection:function(){proj=d3.geo.equirectangular().scale(s).translate([W/2,top]);return{path:d3.geo.path().projection(proj),projection:proj};},
  geographyConfig:{highlightOnHover:false,popupOnHover:false},
  done:init});
+})();
+</script>
+<script>
+(function(){
+var t=document.getElementById('fbt'),b=document.getElementById('fbs'),m=document.getElementById('fbm');
+if(!t||!b||!m)return;
+var U='https://docs.google.com/forms/d/e/1FAIpQLSfMTcaC61QHNVkbZX9pe1T5lR2xZhv2ZyJ92nraKHJ8tMhUgw/formResponse',last=0;
+b.addEventListener('click',function(){
+var v=t.value.trim();
+if(v.length<3){m.textContent='اكتب ملاحظتك أولاً.';return;}
+if(Date.now()-last<30000){m.textContent='انتظر قليلاً قبل إرسال ملاحظة أخرى.';return;}
+b.disabled=true;m.textContent='جارٍ الإرسال...';
+var d=new URLSearchParams();d.append('entry.88196508',v);
+fetch(U,{method:'POST',mode:'no-cors',body:d}).then(function(){last=Date.now();t.value='';m.textContent='شكراً، وصلتنا ملاحظتك.';}).catch(function(){m.textContent='تعذّر الإرسال، جرّب الرابط أدناه.';}).then(function(){b.disabled=false;});
+});
 })();
 </script>
 </body>
