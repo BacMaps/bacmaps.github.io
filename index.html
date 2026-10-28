@@ -321,8 +321,9 @@ function seqSet(t,g){
 function srch(){
  var v=nrm($('sq').value),box=$('sg'),h=$('shint');box.textContent='';h.hidden=true;if(!v)return;
  var ks=Object.keys(AN).filter(function(k){return EX[k]&&EX[k].length;}),hit=[];
- ks.forEach(function(k){var sc=0;AN[k].forEach(function(n){var i=nrm(n).indexOf(v);if(i===0)sc=Math.max(sc,3);else if(i>0)sc=Math.max(sc,2);});if(sc)hit.push([k,sc]);});
- hit.sort(function(a,b){return b[1]-a[1];});
+ var bs=function(x){return x.replace(/^ال(?=.)/,'');},bv=bs(v);
+ ks.forEach(function(k){var sc=0,ln=99;AN[k].forEach(function(n){n=bs(nrm(n));var i=n.indexOf(bv),s=0;if(i===0)s=n.length===bv.length?5:3;else if(i>0)s=2;if(s>sc){sc=s;ln=n.length;}else if(s&&s===sc&&n.length<ln)ln=n.length;});if(sc)hit.push([k,sc,ln]);});
+ hit.sort(function(a,b){return b[1]-a[1]||a[2]-b[2];});
  if(!hit.length){
   var tol=v.length>=5?2:1;
   ks.forEach(function(k){var d=99;AN[k].forEach(function(n){n=nrm(n);d=Math.min(d,lev(v,n),lev(v,n.slice(0,v.length+1)));});if(d<=tol)hit.push([k,-d]);});
@@ -400,7 +401,7 @@ function check(){
  $('res').hidden=false;$('res').scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 function clear(){finished=false;sel={};seq=[];acur=0;paint={};strokes=[];if(gx)gx.textContent='';$('res').hidden=true;
- svgEl.querySelectorAll('.sel,.ok,.bad,.miss,.bw,.be').forEach(function(p){p.classList.remove('sel','ok','bad','miss','bw','be');});}
+ svgEl.querySelectorAll('.sel,.fl,.ok,.bad,.miss,.bw,.be').forEach(function(p){p.classList.remove('sel','fl','ok','bad','miss','bw','be');});}
 function load(i){qi=i;clear();$('exh').textContent=QS[i].n;$('q').textContent=QS[i].t;
  document.querySelectorAll('.tab').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.i===i?'true':'false');});
  var q=QS[i];$('pal').hidden=q.m!=='bloc';if(east){var sh=(q.m==='bloc'||q.eu)?'':'none';east.style.display=sh;east.__bl.style.display=sh;MGS.forEach(function(m){var on=m.ex?!!q.ex:sh==='';m.p.style.display=on?'':'none';m.mem.forEach(function(e){e.style.display=on?'none':'';});});}if(q.m==='bloc')buildPal();
